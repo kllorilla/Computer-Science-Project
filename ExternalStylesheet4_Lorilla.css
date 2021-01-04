@@ -1,0 +1,185 @@
+* {box-sizing: border-box;}
+img {
+	float: left;
+	padding-right:15px;
+	padding-left:15px;
+}
+h6{
+	padding-left:15px;
+}
+.responsive {
+  width: 100%;
+  height:300px;
+}
+body { 
+  background-color: #F9CB9C;
+  height: 100%;
+  margin: 50px;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+p{
+	text-align:justify;
+}
+.header {
+  overflow: hidden;
+  background-color: #F9CB9C;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 10px;
+}
+.header a:hover {
+  background-color: #0C343D;
+  color: white;
+}
+
+.header a.active {
+  background-color: #0C343D;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header .login-container {
+  float: right;
+}
+
+.header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.header .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.header .login-container button:hover {
+  background-color: #0C343D;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: black;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: black;
+}
+.fa-instagram {
+  background:#D7263D;
+  color: black;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: black;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0C343D;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #0C343D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #0C343D;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #F9CB9C;;
+  padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding: 20px 8px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+	padding-left:0px;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+`}
+ .header .login-container {
+    float: none;
+  }
+  .header a, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .header input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+footer{
+	text-align: center;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/help/header.gif");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
